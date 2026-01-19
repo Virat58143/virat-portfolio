@@ -96,41 +96,6 @@ If you’d like to collaborate, hire me, or just say hello:
 * 📱 **Mobile:** +91 8859151562
 * 🌍 **Location:** India
 
-The contact form submissions are directly stored in **Google Sheets**.
-
----
-
-## ⚙️ Installation & Setup (For Local Run)
-
-```bash
-# Clone the repository
-git clone https://github.com/Virat58143/virat-portfolio.git
-
-# Navigate to project folder
-cd virat-portfolio
-
-# Install dependencies
-npm install
-
-# Run locally
-npm run dev
-```
-
----
-
-## 🚀 Deployment
-
-This project is deployed using **GitHub Pages** with a Vite build setup.
-
-```bash
-npm run build
-git add .
-git commit -m "update"
-git push
-```
-
----
-
 ## 🎯 Future Improvements
 
 * Add more real-world projects
