@@ -1,0 +1,146 @@
+/* =========================
+   CERTIFICATES SECTION
+========================= */
+
+.certificates-section {
+  padding: 40px 6%;
+}
+
+/* HEADER */
+.certificates-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.certificates-header h2 {
+  font-size: 34px;
+}
+
+.certificates-header p {
+  font-size: 15px;
+  opacity: 0.75;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* =========================
+   CARD (SAME AS PROJECT / SKILL CARD)
+========================= */
+
+.certificate-card {
+  border-radius: 24px;
+  padding: 24px;
+  transition: 0.45s ease;
+  overflow: hidden;
+
+  /* EXACT SAME STYLE */
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* LIGHT MODE */
+.light .certificate-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* DARK MODE */
+.dark .certificate-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* HOVER (SAME AS PROJECT CARD) */
+.certificate-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  
+}
+
+/* ACTIVE CARD */
+.certificate-card.active {
+  transform: scale(1.06);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.certificate-card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.certificate-card p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 18px;
+}
+
+/* =========================
+   BUTTON (SAME AS PROJECT VISIT BTN)
+========================= */
+
+.certificate-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+  background: linear-gradient(
+    135deg,
+    #ff4ecd,
+    #7c4dff
+  );
+
+  transition: 0.3s;
+}
+
+.certificate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(124, 77, 255, 0.45);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .certificate-card.active {
+    transform: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificates-header h2 {
+    font-size: 28px;
+  }
+}
