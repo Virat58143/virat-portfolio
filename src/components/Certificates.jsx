@@ -8,7 +8,7 @@ import fullstackCert from "../assets/ACP-certificate.pdf";
 import internshipCert from "../assets/internship.pdf";
 import personalityCert from "../assets/personality-development-certificate.pdf";
 import advanceCert from "../assets/ADCA.pdf";
-
+import HarvardCert from "../assets/Harvard-certificate.pdf";
 
 
 // CERTIFICATES ARRAY
@@ -33,7 +33,11 @@ const certificates = [
     issuer: "Apple Tree Infotech",
    file: internshipCert,
   },
-
+  {
+    title: "Business Plan Development Certificate",
+    issuer: "Harvard Business Impact (via Chandigarh University)",
+   file: HarvardCert,
+  },
   
   {
     title: "Advance Diploma in Computer Application",

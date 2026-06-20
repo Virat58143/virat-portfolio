@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
-import MyResumeCert from "../assets/Virat_Resume.pdf";
+import MyResumeCert from "../assets/Virat_Kumar_Resume.pdf";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
